@@ -155,10 +155,7 @@ select * from commande where YEAR(ORDER_TIME)=2017 AND MONTH(ORDER_TIME)=2 and (
  select * from produit
  where YEAR(ORDER_TIME)=2017 AND MONTH(ORDER_TIME)=1 and ID_c=1  LIMIT 3 
  
- select id_order,phone_Number
- from client,contient,commande,produit
- where  commande.id_order=contient.FK_cmd and produit.id_produit=contient.Fk_prod and id_produit=3
-group by FK_cmd,phone_Number
+
  
 select id_order,phone_Number
 from client,contient,commande,produit
